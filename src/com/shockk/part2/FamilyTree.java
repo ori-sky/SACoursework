@@ -109,6 +109,7 @@ public class FamilyTree
 		else if(_ancestor.child instanceof FamilyTreeNode == false)
 		{
 			_ancestor.child = create(childName);
+			_ancestor.partner.child = _ancestor.child;
 		}
 		else if(!_ancestor.hasChild(childName))
 		{

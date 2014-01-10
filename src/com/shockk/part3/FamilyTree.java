@@ -125,7 +125,7 @@ public class FamilyTree
 		FamilyTreeNode node = choose();
 		if(node == null) return;
 		
-		if(_ancestor.partner instanceof FamilyTreeNode == false)
+		if(node.partner instanceof FamilyTreeNode == false)
 		{
 			System.out.println("ERROR: member has no partner");
 			return;
